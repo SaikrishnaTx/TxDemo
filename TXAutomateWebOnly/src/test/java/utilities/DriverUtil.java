@@ -138,7 +138,7 @@ public class DriverUtil {
 					if (browser == null) {
 						
 						//WebDriverManager.chromiumdriver().setup();
-						WebDriverManager.chromedriver().setup();
+						//WebDriverManager.chromedriver().setup();
 						
 						browser = new ChromeDriver();
 						drivers.put(CHROME, browser);

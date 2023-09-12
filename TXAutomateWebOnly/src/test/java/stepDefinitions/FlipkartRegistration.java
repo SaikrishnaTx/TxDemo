@@ -62,7 +62,7 @@ public class FlipkartRegistration extends KeywordUtil {
 	@When("Validate the popup on Login Screen")
 	public void validate_the_popup_on_login_screen() {
 		try {
-			
+			KeywordUtil.delay(2000);
 			KeywordUtil.click(FlipkartLoginPage.LoginCancelBtn, "Cancel the Login Popup on The Screen");
 
 		} catch (Throwable e) {

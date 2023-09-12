@@ -23,7 +23,7 @@ public class Hooks {
 	public static String imagePath1;
 	public static String concatt = ".";
 
-	@Before("@eBay")
+	@Before("@Flipkart")
 	public void beforeMethodAmazon(Scenario scenario) {
 
 		if (scenario.getName().contains("_"))
@@ -46,7 +46,7 @@ public class Hooks {
 		GlobalUtil.setDriver(DriverUtil.getBrowser(GlobalUtil.getCommonSettings().getExecutionEnv(), GlobalUtil.getCommonSettings().getBrowser()));
 	}
 
-	@After("@eBay")
+	@After("@Flipkart")
 	public void afterMethodSmoke(Scenario scenario) {
 		String testName = scenario.getName().split("_")[0].trim();
 		JavascriptExecutor jse = (JavascriptExecutor) GlobalUtil.getDriver();
