@@ -22,7 +22,7 @@ import utilities.KeywordUtil;
 import utilities.LogUtil;
 
 @CucumberOptions(features = "src/test/resources/features", glue = { "stepDefinitions" }, plugin = { "pretty", "html:target/cucumber-html-report.html",
-		"json:target/cucumber.json" }, tags = "@Flipkart", monochrome = true, dryRun=false
+		"json:target/cucumber.json" }, tags = "@MyShopclues", monochrome = true, dryRun=false
 
 )
 public class RunCukesTest extends AbstractTestNGCucumberTests {

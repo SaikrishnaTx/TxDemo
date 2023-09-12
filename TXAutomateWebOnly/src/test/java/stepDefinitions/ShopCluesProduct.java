@@ -28,8 +28,10 @@ public class ShopCluesProduct extends KeywordUtil {
 	@Given("Read the {string} From Excle File")
 	public void read_the_from_excle_file(String arg1) {
 		try {
-			KeywordUtil.cucumberTagName = "Web";
-			dataMap = ExcelDataUtil.getTestDataWithTestCaseID(arg1, "MyeBay");
+			 KeywordUtil.cucumberTagName = "Web";
+			dataMap = ExcelDataUtil.getTestDataWithTestCaseID(arg1, "ShopClues");
+			
+			
 
 		} catch (Throwable e) {
 			GlobalUtil.e = e;
